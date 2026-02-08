@@ -1,0 +1,21 @@
+{
+  "hash": "f8698cb3",
+  "configHash": "36085d14",
+  "lockfileHash": "aa2fcaaf",
+  "browserHash": "83b6c228",
+  "optimized": {
+    "gsap": {
+      "src": "../../gsap/index.js",
+      "file": "gsap.js",
+      "fileHash": "e8c9796b",
+      "needsInterop": false
+    },
+    "gsap/ScrollTrigger": {
+      "src": "../../gsap/ScrollTrigger.js",
+      "file": "gsap_ScrollTrigger.js",
+      "fileHash": "d55f9df9",
+      "needsInterop": false
+    }
+  },
+  "chunks": {}
+}
