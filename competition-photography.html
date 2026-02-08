@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/images/logotype white 5.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AWF UI 2026 | Photography Competition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fredoka:wght@300..700&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Yellowtail&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+    <style>
+        /* basic override for competition page spacing */
+        .event-page-section {
+            padding: 4rem 10%;
+            min-height: 400px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar smart-nav">
+        <div class="nav-logo">
+            <a href="/index.html#hero">
+                <img src="/images/logotype white 5.png" alt="AWF Logo" class="logo-img">
+            </a>
+        </div>
+
+        <div class="nav-menu desktop-only">
+            <a href="/index.html#hero" class="nav-link">Home</a>
+            <a href="/index.html#about" class="nav-link">About</a>
+
+            <div class="nav-dropdown">
+                <span class="nav-link">Event</span>
+                <div class="dropdown-content">
+                    <a href="/event.html" class="dropdown-item">Day 1</a>
+                    <a href="/event-day-2.html" class="dropdown-item">Day 2</a>
+                </div>
+            </div>
+
+            <div class="nav-dropdown">
+                <span class="nav-link">Competition</span>
+                <div class="dropdown-content">
+                    <a href="/competition-photography.html" class="dropdown-item">Photography</a>
+                    <a href="/competition-brand-innovation.html" class="dropdown-item">Brand Innovation</a>
+                    <a href="/competition-product-design.html" class="dropdown-item">Product Design</a>
+                    <a href="/competition-poster.html" class="dropdown-item">Poster</a>
+                    <a href="/competition-creative-campaign.html" class="dropdown-item">Creative Campaign</a>
+                </div>
+            </div>
+
+            <a href="/index.html#types" class="nav-link">Exhibition</a>
+            <a href="#" class="nav-link">Merchandise</a>
+            <a href="#" class="nav-link">Blog</a>
+            <a href="/index.html#contact" class="nav-link">Contact Us</a>
+        </div>
+
+        <div class="nav-actions">
+            <button class="nav-cta magnetic primary-cta">Get Ticket</button>
+            <button class="hamburger-btn mobile-only">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-content">
+            <a href="/index.html#hero" class="mobile-link">Home</a>
+            <a href="/index.html#about" class="mobile-link">About</a>
+
+            <div class="mobile-accordion">
+                <div class="mobile-accordion-header mobile-link">
+                    Event <span class="acc-icon">+</span>
+                </div>
+                <div class="mobile-accordion-body">
+                    <a href="/event.html" class="mobile-sublink">Day 1</a>
+                    <a href="/event-day-2.html" class="mobile-sublink">Day 2</a>
+                </div>
+            </div>
+
+            <div class="mobile-accordion">
+                <div class="mobile-accordion-header mobile-link">
+                    Competition <span class="acc-icon">+</span>
+                </div>
+                <div class="mobile-accordion-body">
+                    <a href="/competition-photography.html" class="mobile-sublink">Photography</a>
+                    <a href="/competition-brand-innovation.html" class="mobile-sublink">Brand Innovation</a>
+                    <a href="/competition-product-design.html" class="mobile-sublink">Product Design</a>
+                    <a href="/competition-poster.html" class="mobile-sublink">Poster</a>
+                    <a href="/competition-creative-campaign.html" class="mobile-sublink">Creative Campaign</a>
+                </div>
+            </div>
+
+            <a href="/index.html#types" class="mobile-link">Exhibition</a>
+            <a href="#" class="mobile-link">Merchandise</a>
+            <a href="#" class="mobile-link">Blog</a>
+            <a href="/index.html#contact" class="mobile-link">Contact Us</a>
+        </div>
+    </div>
+
+    <main class="main-content" style="padding-top: 80px;">
+
+        <!-- Competition Hero Section -->
+        <section id="event-hero" class="event-hero">
+            <div class="event-hero-content">
+                <h1 class="event-title">PHOTOGRAPHY</h1>
+                <p class="event-desc">
+                    Unleash your visual storytelling skills. The AWF Photography Competition invites you to capture the
+                    essence of advertising in a single frame. Show us your unique perspective and creativity.
+                </p>
+            </div>
+        </section>
+
+        <!-- Content Grid: Main Visual + Timeline -->
+        <section id="event-layout" class="section event-grid-section">
+            <div class="event-grid-container">
+                <!-- Left Column: Poster / Visual -->
+                <div class="event-col-left">
+                    <div class="main-visual-box"></div>
+                    <p class="visual-caption">
+                        Capture moments that tell a story. This competition challenges you to explore the boundaries of
+                        visual communication and advertising photography. Use light, composition, and subject to create
+                        a compelling image.
+                    </p>
+                </div>
+
+                <!-- Right Column: Our Journey -->
+                <div class="event-col-right">
+                    <div class="journey-block">
+                        <h2 class="event-h2">Our Journey</h2>
+                        <div class="journey-box"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booklet Section -->
+        <section id="event-speaker" class="section speaker-section">
+            <h2 class="section-title center grey-title">Booklet</h2>
+        </section>
+
+        <!-- Registration Section (Reusing Ticket Styles) -->
+        <section id="event-tickets" class="section ticket-section">
+            <div class="ticket-grid">
+                <!-- Early Bird -->
+                <div class="ticket-card">
+                    <div class="ticket-price">75.000 <span class="ticket-label">/Early Bird</span></div>
+                    <button class="event-ticket-btn">Register Now!</button>
+                </div>
+                <!-- Regular -->
+                <div class="ticket-card">
+                    <div class="ticket-price">100.000 <span class="ticket-label">/Regular</span></div>
+                    <button class="event-ticket-btn">Register Now!</button>
+                </div>
+                <!-- Team Bundle -->
+                <div class="ticket-card">
+                    <div class="ticket-price">250.000 <span class="ticket-label">/Group (3)</span></div>
+                    <button class="event-ticket-btn">Register Now!</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Hero CTA -->
+        <section class="footer-hero-repeat text-center">
+            <h2 class="big-footer-title">Ready to Capture <br> The Moment?</h2>
+            <div class="footer-cta-btns">
+                <button class="nav-cta pill-btn">Download Booklet</button>
+                <button class="nav-cta pill-btn">Register Now</button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="real-footer">
+        <div class="footer-left">
+            <div class="footer-logo">
+                <img src="/images/logotype white 5.png" alt="AWF Logo" class="footer-logo-img">
+            </div>
+            <span class="footer-tagline">Advertising Week Festival</span>
+        </div>
+        <div class="footer-right">
+            <p>Office Address<br>Adlab VC Kampus Vokasi UI, Depok</p>
+        </div>
+    </footer>
+
+    <div class="footer-bar">
+        <span>© 2026 AWF UI</span>
+        <span>Jakarta, Indonesia</span>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

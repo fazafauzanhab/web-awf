@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/images/logotype white 5.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AWF UI 2026 | The Ground</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fredoka:wght@300..700&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Yellowtail&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loading-screen">
+    <div class="loading-content">
+      <img src="/images/logotype white 5.png" alt="AWF Logo" class="loading-logo">
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- Navigation -->
+  <!-- Navigation -->
+  <nav class="navbar smart-nav">
+    <div class="nav-logo">
+      <a href="#hero">
+        <img src="/images/logotype white 5.png" alt="AWF Logo" class="logo-img">
+      </a>
+    </div>
+
+    <div class="nav-menu desktop-only">
+      <a href="#hero" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+
+      <div class="nav-dropdown">
+        <span class="nav-link">Event</span>
+        <div class="dropdown-content">
+          <a href="/event.html" class="dropdown-item">Day 1</a>
+          <a href="/event-day-2.html" class="dropdown-item">Day 2</a>
+        </div>
+      </div>
+
+      <div class="nav-dropdown">
+        <span class="nav-link">Competition</span>
+        <div class="dropdown-content">
+          <a href="/competition-photography.html" class="dropdown-item">Photography</a>
+          <a href="/competition-brand-innovation.html" class="dropdown-item">Brand Innovation</a>
+          <a href="/competition-product-design.html" class="dropdown-item">Product Design</a>
+          <a href="/competition-poster.html" class="dropdown-item">Poster</a>
+          <a href="/competition-creative-campaign.html" class="dropdown-item">Creative Campaign</a>
+        </div>
+      </div>
+
+      <a href="#types" class="nav-link">Exhibition</a>
+      <a href="#" class="nav-link">Merchandise</a>
+      <a href="#" class="nav-link">Blog</a>
+      <a href="#contact" class="nav-link">Contact Us</a>
+    </div>
+
+    <div class="nav-actions">
+      <button class="nav-cta magnetic primary-cta">Get Ticket</button>
+      <button class="hamburger-btn mobile-only">
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-content">
+      <a href="#hero" class="mobile-link">Home</a>
+      <a href="#about" class="mobile-link">About</a>
+
+      <div class="mobile-accordion">
+        <div class="mobile-accordion-header mobile-link">
+          Event <span class="acc-icon">+</span>
+        </div>
+        <div class="mobile-accordion-body">
+          <a href="/event.html" class="mobile-sublink">Day 1</a>
+          <a href="/event-day-2.html" class="mobile-sublink">Day 2</a>
+        </div>
+      </div>
+
+      <div class="mobile-accordion">
+        <div class="mobile-accordion-header mobile-link">
+          Competition <span class="acc-icon">+</span>
+        </div>
+        <div class="mobile-accordion-body">
+          <a href="/competition-photography.html" class="mobile-sublink">Photography</a>
+          <a href="/competition-brand-innovation.html" class="mobile-sublink">Brand Innovation</a>
+          <a href="/competition-product-design.html" class="mobile-sublink">Product Design</a>
+          <a href="/competition-poster.html" class="mobile-sublink">Poster</a>
+          <a href="/competition-creative-campaign.html" class="mobile-sublink">Creative Campaign</a>
+        </div>
+      </div>
+
+      <a href="#types" class="mobile-link">Exhibition</a>
+      <a href="#" class="mobile-link">Merchandise</a>
+      <a href="#" class="mobile-link">Blog</a>
+      <a href="#contact" class="mobile-link">Contact Us</a>
+    </div>
+  </div>
+
+  <main class="main-content">
+
+    <!-- Section 1: Hero -->
+    <section id="hero" class="section hero-section">
+      <video autoplay loop muted playsinline class="hero-video-bg">
+        <source src="/video/WhatsApp%20Video%202026-02-07%20at%2018.42.59.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-overlay"></div>
+      <div class="hero-grain"></div>
+
+      <div class="hero-container">
+        <div class="hero-text-block">
+          <h1 class="hero-heading">
+            The Biggest <br>
+            Advertising Festival <br>
+            in Universitas Indonesia
+          </h1>
+          <p class="hero-subtext">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+          </p>
+          <div class="hero-buttons">
+            <button class="primary-btn magnetic">Get Ticket</button>
+            <button class="secondary-btn magnetic">About Us</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Section 2: Countdown -->
+    <section id="countdown" class="section countdown-section">
+      <div class="countdown-strip">
+        <div class="strip-header">
+          <div class="awf-box">
+            <img src="/images/logotype white 5.png" alt="AWF Logo" class="awf-logo-img">
+          </div>
+          <div class="countdown-title-box">
+            <div class="countdown-title">Coming Soon</div>
+          </div>
+          <div class="year-box">2026</div>
+        </div>
+        <div class="strip-timer">
+          <div class="timer-block red-theme">
+            <div class="timer-label">DAY</div>
+            <div id="days" class="timer-val">00</div>
+          </div>
+          <div class="timer-block blue-theme">
+            <div class="timer-label">HOURS</div>
+            <div id="hours" class="timer-val">00</div>
+          </div>
+          <div class="timer-block blue-theme">
+            <div class="timer-label">MINUTES</div>
+            <div id="minutes" class="timer-val">00</div>
+          </div>
+          <div class="timer-block blue-theme">
+            <div class="timer-label">SECOND</div>
+            <div id="seconds" class="timer-val">00</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Background Wrapper: About Us to Milestones -->
+    <div class="scene-background">
+
+      <!-- Section: About Us / The Ground -->
+      <section id="about" class="section about-essence-section">
+        <h2 class="section-title center">About Us</h2>
+
+        <div class="about-grid">
+          <div class="about-square reveal-on-scroll stagger-1"></div>
+          <div class="about-square reveal-on-scroll stagger-2"></div>
+          <div class="about-square reveal-on-scroll stagger-3"></div>
+          <div class="about-square reveal-on-scroll stagger-4"></div>
+        </div>
+
+        <div class="essence-container">
+          <div class="ground-logo-large">
+            <img src="/images/Vector.png" alt="The Ground Logo" class="ground-vector-logo">
+          </div>
+          <div class="essence-right-text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+              Bringing together the brightest creative minds.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Milestones -->
+      <section id="milestone" class="section milestone-section">
+        <h2 class="section-title left">AWF Milestone</h2>
+        <div class="milestone-boxes">
+          <div class="m-box">
+            <div class="m-img"></div>
+            <div class="m-content">
+              <h3>AWF UI 2025</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="m-box">
+            <div class="m-img"></div>
+            <div class="m-content">
+              <h3>AWF UI 2024</h3>
+              <p>Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+          </div>
+          <div class="m-box">
+            <div class="m-img"></div>
+            <div class="m-content">
+              <h3>AWF UI 2023</h3>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <!-- End Background Wrapper -->
+
+    <!-- Section: Teaser -->
+    <section id="teaser" class="section teaser-section">
+      <h2 class="section-title center"></h2>
+      <div class="video-container" style="padding: 0; overflow: hidden; position: relative;">
+        <iframe class="teaser-video" width="100%" height="100%"
+          src="https://www.youtube.com/embed/n1D8P1kc9Ho?autoplay=1&mute=1&controls=0&loop=1&playlist=n1D8P1kc9Ho&showinfo=0&rel=0"
+          title="Teaser Video" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          style="width: 100%; height: 140%; position: absolute; top: -20%; pointer-events: none;" loading="lazy">
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Section: Event Types Boxes -->
+    <section id="types" class="section types-section">
+      <div class="types-row">
+        <div class="type-box reveal-on-scroll stagger-1">
+          <div class="type-placeholder"></div>
+          <h3>Event</h3>
+        </div>
+        <div class="type-box reveal-on-scroll stagger-2">
+          <div class="type-placeholder"></div>
+          <h3>Competition</h3>
+        </div>
+        <div class="type-box reveal-on-scroll stagger-3">
+          <div class="type-placeholder"></div>
+          <h3>Exhibition</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Why Join -->
+    <section id="why" class="section why-section">
+      <h2 class="section-title center text-shadow">Why You Should Join<br>AWF UI 2026?</h2>
+      <div class="why-grid">
+        <!-- Card 1 -->
+        <div class="why-card">
+          <div class="card-label">Reason 1</div>
+          <div class="card-content">
+            <div class="why-icon-box">ICON</div>
+            <p class="why-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt.</p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="why-card">
+          <div class="card-label">Reason 2</div>
+          <div class="card-content">
+            <div class="why-icon-box">ICON</div>
+            <p class="why-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt.</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="why-card">
+          <div class="card-label">Reason 3</div>
+          <div class="card-content">
+            <div class="why-icon-box">ICON</div>
+            <p class="why-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Meet Speaker -->
+    <section id="speaker" class="section speaker-section">
+      <h2 class="section-title center grey-title">Meet Speaker</h2>
+      <p class="speaker-subline">Sabar yak.......</p>
+    </section>
+
+    <!-- Section: Partners -->
+    <section id="partners" class="section partners-section">
+      <h2 class="section-title center">Partners Who Collaborate With Us</h2>
+      <div class="partners-grid">
+        <div class="p-logo"></div>
+        <div class="p-logo"></div>
+        <div class="p-logo"></div>
+        <div class="p-logo"></div>
+        <div class="p-logo"></div>
+        <div class="p-logo"></div>
+      </div>
+
+      <h2 class="section-title center" style="margin-top: 4rem;">School Partner</h2>
+      <div class="partners-grid small">
+        <div class="p-logo"></div>
+        <div class="p-logo"></div>
+        <div class="p-logo"></div>
+        <div class="p-logo"></div>
+        <div class="p-logo"></div>
+        <div class="p-logo"></div>
+      </div>
+    </section>
+
+    <!-- Section: FAQ -->
+    <section id="faq" class="section faq-section">
+      <div class="faq-container">
+        <h2 class="section-title left">Frequently <br>Ask Question</h2>
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <span>Question 1</span>
+            <span class="arrow">v</span>
+          </div>
+          <div class="faq-item">
+            <span>Question 2</span>
+            <span class="arrow">v</span>
+          </div>
+          <div class="faq-item">
+            <span>Question 3</span>
+            <span class="arrow">v</span>
+          </div>
+          <div class="faq-item">
+            <span>Question 4</span>
+            <span class="arrow">v</span>
+          </div>
+          <div class="faq-item">
+            <span>Question 5</span>
+            <span class="arrow">v</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer Hero Repeat -->
+    <section class="footer-hero-repeat">
+      <h1 class="hero-heading small-ver">The Biggest Advertising Festival <br> in Universitas Indonesia</h1>
+      <div class="footer-cta-btns">
+        <button class="nav-cta pill-btn">Get Ticket</button>
+        <button class="nav-cta pill-btn">About Us</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="real-footer">
+    <div class="footer-left">
+      <div class="footer-logo">
+        <img src="/images/logotype white 5.png" alt="AWF Logo" class="footer-logo-img">
+      </div>
+      <span class="footer-tagline">Advertising Week Festival</span>
+    </div>
+    <div class="footer-right">
+      <p>Office Address<br>Adlab VC Kampus Vokasi UI, Depok</p>
+    </div>
+  </footer>
+
+  <div class="footer-bar">
+    <span>© 2026 AWF UI</span>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
